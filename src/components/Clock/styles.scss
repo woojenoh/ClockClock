@@ -12,8 +12,8 @@
     background-color: rgb(44, 44, 44);
   }
   .clock__center {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
@@ -24,10 +24,10 @@
     margin: auto;
   }
   .clock__hour {
-    width: 5px;
+    width: 10px;
     height: 100%;
     margin: 0 auto;
-    transform: rotate(90deg);
+    transform: rotate(300deg);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -36,16 +36,16 @@
     &::before {
       content: "";
       position: absolute;
-      width: 5px;
+      width: 10px;
       height: 50%;
       background-color: white;
     }
   }
   .clock__minute {
-    width: 5px;
+    width: 10px;
     height: 100%;
     margin: 0 auto;
-    transform: rotate(30deg);
+    transform: rotate(300deg);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -54,7 +54,7 @@
     &::before {
       content: "";
       position: absolute;
-      width: 5px;
+      width: 10px;
       height: 50%;
       background-color: white;
     }

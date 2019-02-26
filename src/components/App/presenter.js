@@ -1,35 +1,19 @@
 import React from "react";
-import Clcok from "../Clock";
+import Clocks from "../Clocks";
 
 import "./styles.scss";
 
-function App() {
+function App(props) {
+  const { time } = props;
+
   return (
-    <div className="clocks">
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
-      <Clcok />
+    <div className="App">
+      <Clocks time={time[0]} />
+      <Clocks time={time[1]} />
+      <Clocks time={time[2]} />
+      <Clocks time={time[3]} />
+      <Clocks time={time[4]} />
+      <Clocks time={time[5]} />
     </div>
   );
 }
